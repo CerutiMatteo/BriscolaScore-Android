@@ -1,0 +1,198 @@
+unit uMainUnit;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Objects,
+  FMX.EditBox, FMX.SpinBox, FMX.Controls.Presentation, FMX.Edit, FMX.Memo.Types,
+  FMX.ScrollBox, FMX.Memo, FMX.StdCtrls;
+
+type
+  TMainForm = class(TForm)
+    rcthome: TRectangle;
+    edtp1: TEdit;
+    edtp2: TEdit;
+    edtp3: TEdit;
+    edtp4: TEdit;
+    edtp5: TEdit;
+    spnbxp1: TSpinBox;
+    spnbxp2: TSpinBox;
+    spnbxp3: TSpinBox;
+    spnbxp4: TSpinBox;
+    spnbxp5: TSpinBox;
+    spnbxp6: TSpinBox;
+    edtp6: TEdit;
+    rctvalid: TRectangle;
+    mmostorico: TMemo;
+    lblchimante: TLabel;
+    lblbtnchiamato: TLabel;
+    btnp1chiama: TButton;
+    btnp2chiama: TButton;
+    btnp3chiama: TButton;
+    btnp4chiama: TButton;
+    btnp5chiama: TButton;
+    btnp6chiama: TButton;
+    btnp1chiamato: TButton;
+    btnp2chiamato: TButton;
+    btnp3chiamato: TButton;
+    btnp4chiamato: TButton;
+    btnp5chiamato: TButton;
+    btnp6chiamato: TButton;
+    btnvince: TButton;
+    btnperde: TButton;
+    procedure spnbxp1Change(Sender: TObject);
+    procedure spnbxp2Change(Sender: TObject);
+    procedure spnbxp3Change(Sender: TObject);
+    procedure spnbxp4Change(Sender: TObject);
+    procedure spnbxp5Change(Sender: TObject);
+    procedure spnbxp6Change(Sender: TObject);
+    procedure btnp1chiamaClick(Sender: TObject);
+    procedure btnp2chiamaClick(Sender: TObject);
+    procedure btnp3chiamaClick(Sender: TObject);
+    procedure btnp4chiamaClick(Sender: TObject);
+    procedure btnp5chiamaClick(Sender: TObject);
+    procedure btnp6chiamaClick(Sender: TObject);
+    procedure btnp1chiamatoClick(Sender: TObject);
+    procedure btnp2chiamatoClick(Sender: TObject);
+    procedure btnp3chiamatoClick(Sender: TObject);
+    procedure btnp4chiamatoClick(Sender: TObject);
+    procedure btnp5chiamatoClick(Sender: TObject);
+    procedure btnp6chiamatoClick(Sender: TObject);
+    procedure btnvinceClick(Sender: TObject);
+    procedure btnperdeClick(Sender: TObject);
+  private
+    { Private declarations }
+    line: string;
+  public
+    { Public declarations }
+  end;
+
+var
+  mainForm: TMainForm;
+
+implementation
+
+{$R *.fmx}
+
+procedure TMainForm.btnp1chiamaClick(Sender: TObject);
+begin
+  line := 'Chiamante '+edtp1.text +', ';
+end;
+
+procedure TMainForm.btnp1chiamatoClick(Sender: TObject);
+begin
+  line := line + 'chiamato ' + edtp1.text + ' ' ;
+end;
+
+procedure TMainForm.btnp2chiamaClick(Sender: TObject);
+begin
+  line := 'Chiamante '+edtp2.text +', ';
+end;
+
+procedure TMainForm.btnp2chiamatoClick(Sender: TObject);
+begin
+  line := line + 'chiamato ' + edtp2.text + ' ';
+end;
+
+procedure TMainForm.btnp3chiamaClick(Sender: TObject);
+begin
+  line := 'Chiamante '+edtp3.text +', ';
+end;
+
+procedure TMainForm.btnp3chiamatoClick(Sender: TObject);
+begin
+  line := line + 'chiamato ' + edtp3.text + ' ';
+end;
+
+procedure TMainForm.btnp4chiamaClick(Sender: TObject);
+begin
+  line := 'Chiamante '+edtp4.text +', ';
+end;
+
+procedure TMainForm.btnp4chiamatoClick(Sender: TObject);
+begin
+    line := line + 'chiamato ' + edtp4.text + ' ' ;
+end;
+
+procedure TMainForm.btnp5chiamaClick(Sender: TObject);
+begin
+  line := 'Chiamante '+edtp5.text +', ';
+end;
+
+procedure TMainForm.btnp5chiamatoClick(Sender: TObject);
+begin
+    line := line + 'chiamato ' + edtp5.text + ' ';
+end;
+
+procedure TMainForm.btnp6chiamaClick(Sender: TObject);
+begin
+  line := 'Chiamante '+edtp6.text +', ';
+end;
+
+procedure TMainForm.btnp6chiamatoClick(Sender: TObject);
+begin
+  line := line + 'chiamato ' + edtp6.text + ' ';
+end;
+
+procedure TMainForm.btnperdeClick(Sender: TObject);
+begin
+  line := line + 'PERDONO;';
+  mmostorico.Lines.add(line)
+end;
+
+procedure TMainForm.btnvinceClick(Sender: TObject);
+begin
+  line := line + 'VINCONO;';
+  mmostorico.Lines.add(line)
+end;
+
+procedure TMainForm.spnbxp1Change(Sender: TObject);
+begin
+  if (Strtoint(spnbxp1.Text)+Strtoint(spnbxp2.Text)+Strtoint(spnbxp3.Text)+Strtoint(spnbxp4.Text)+Strtoint(spnbxp5.Text)+Strtoint(spnbxp6.Text) <> 0) then
+    rctvalid.fill.Color := TAlphaColors.Red
+  else
+    rctvalid.fill.Color := TAlphaColors.green;
+end;
+
+procedure TMainForm.spnbxp2Change(Sender: TObject);
+begin
+  if (Strtoint(spnbxp1.Text)+Strtoint(spnbxp2.Text)+Strtoint(spnbxp3.Text)+Strtoint(spnbxp4.Text)+Strtoint(spnbxp5.Text)+Strtoint(spnbxp6.Text) <> 0) then
+    rctvalid.fill.Color := TAlphaColors.Red
+  else
+    rctvalid.fill.Color := TAlphaColors.green;
+end;
+
+procedure TMainForm.spnbxp3Change(Sender: TObject);
+begin
+  if (Strtoint(spnbxp1.Text)+Strtoint(spnbxp2.Text)+Strtoint(spnbxp3.Text)+Strtoint(spnbxp4.Text)+Strtoint(spnbxp5.Text)+Strtoint(spnbxp6.Text) <> 0) then
+    rctvalid.fill.Color := TAlphaColors.Red
+  else
+    rctvalid.fill.Color := TAlphaColors.green;
+end;
+
+procedure TMainForm.spnbxp4Change(Sender: TObject);
+begin
+  if (Strtoint(spnbxp1.Text)+Strtoint(spnbxp2.Text)+Strtoint(spnbxp3.Text)+Strtoint(spnbxp4.Text)+Strtoint(spnbxp5.Text)+Strtoint(spnbxp6.Text) <> 0) then
+    rctvalid.fill.Color := TAlphaColors.Red
+  else
+    rctvalid.fill.Color := TAlphaColors.green;
+end;
+
+procedure TMainForm.spnbxp5Change(Sender: TObject);
+begin
+  if (Strtoint(spnbxp1.Text)+Strtoint(spnbxp2.Text)+Strtoint(spnbxp3.Text)+Strtoint(spnbxp4.Text)+Strtoint(spnbxp5.Text)+Strtoint(spnbxp6.Text) <> 0) then
+    rctvalid.fill.Color := TAlphaColors.Red
+  else
+    rctvalid.fill.Color := TAlphaColors.green;
+end;
+
+procedure TMainForm.spnbxp6Change(Sender: TObject);
+begin
+  if (Strtoint(spnbxp1.Text)+Strtoint(spnbxp2.Text)+Strtoint(spnbxp3.Text)+Strtoint(spnbxp4.Text)+Strtoint(spnbxp5.Text)+Strtoint(spnbxp6.Text) <> 0) then
+    rctvalid.fill.Color := TAlphaColors.Red
+  else
+    rctvalid.fill.Color := TAlphaColors.green;
+end;
+
+end.

@@ -1,0 +1,335 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 653
+  ClientWidth = 393
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object rcthome: TRectangle
+    Align = Client
+    Size.Width = 393.000000000000000000
+    Size.Height = 653.000000000000000000
+    Size.PlatformDefault = False
+    object edtp1: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 0
+      Text = 'player1'
+      Position.X = 32.000000000000000000
+      Position.Y = 56.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object edtp2: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 1
+      Text = 'player2'
+      Position.X = 32.000000000000000000
+      Position.Y = 86.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object edtp3: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 2
+      Text = 'player3'
+      Position.X = 32.000000000000000000
+      Position.Y = 116.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object edtp4: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 3
+      Text = 'player4'
+      Position.X = 32.000000000000000000
+      Position.Y = 146.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object edtp5: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 4
+      Text = 'player5'
+      Position.X = 32.000000000000000000
+      Position.Y = 176.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object spnbxp1: TSpinBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 5
+      Cursor = crIBeam
+      Min = -1000.000000000000000000
+      Max = 1000.000000000000000000
+      Position.X = 113.000000000000000000
+      Position.Y = 56.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      OnChange = spnbxp1Change
+    end
+    object spnbxp2: TSpinBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 6
+      Cursor = crIBeam
+      Min = -1000.000000000000000000
+      Max = 1000.000000000000000000
+      Position.X = 113.000000000000000000
+      Position.Y = 86.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      OnChange = spnbxp2Change
+    end
+    object spnbxp3: TSpinBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 7
+      Cursor = crIBeam
+      Min = -1000.000000000000000000
+      Max = 1000.000000000000000000
+      Position.X = 113.000000000000000000
+      Position.Y = 116.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      OnChange = spnbxp3Change
+    end
+    object spnbxp4: TSpinBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 8
+      Cursor = crIBeam
+      Min = -1000.000000000000000000
+      Max = 1000.000000000000000000
+      Position.X = 113.000000000000000000
+      Position.Y = 146.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      OnChange = spnbxp4Change
+    end
+    object spnbxp5: TSpinBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 9
+      Cursor = crIBeam
+      Min = -1000.000000000000000000
+      Max = 1000.000000000000000000
+      Position.X = 113.000000000000000000
+      Position.Y = 176.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      OnChange = spnbxp5Change
+    end
+    object spnbxp6: TSpinBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 10
+      Cursor = crIBeam
+      Min = -1000.000000000000000000
+      Max = 1000.000000000000000000
+      Position.X = 113.000000000000000000
+      Position.Y = 206.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      OnChange = spnbxp6Change
+    end
+    object edtp6: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 11
+      Text = 'player6'
+      Position.X = 32.000000000000000000
+      Position.Y = 206.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object rctvalid: TRectangle
+      Fill.Color = claGreen
+      Position.X = 32.000000000000000000
+      Position.Y = 620.000000000000000000
+      Size.Width = 345.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object mmostorico: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      DataDetectorTypes = []
+      Position.X = 32.000000000000000000
+      Position.Y = 266.000000000000000000
+      Size.Width = 345.000000000000000000
+      Size.Height = 346.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 13
+      Viewport.Width = 341.000000000000000000
+      Viewport.Height = 342.000000000000000000
+    end
+    object lblchimante: TLabel
+      Position.X = 200.000000000000000000
+      Position.Y = 31.000000000000000000
+      Size.Width = 81.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'chiama'
+      TabOrder = 14
+    end
+    object lblbtnchiamato: TLabel
+      Position.X = 303.000000000000000000
+      Position.Y = 33.000000000000000000
+      Size.Width = 90.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'chiamato'
+      TabOrder = 15
+    end
+    object btnp1chiama: TButton
+      Position.X = 201.000000000000000000
+      Position.Y = 56.000000000000000000
+      Size.Width = 75.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 16
+      TextSettings.Trimming = None
+      OnClick = btnp1chiamaClick
+    end
+    object btnp2chiama: TButton
+      Position.X = 200.000000000000000000
+      Position.Y = 88.000000000000000000
+      Size.Width = 76.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 17
+      TextSettings.Trimming = None
+      OnClick = btnp2chiamaClick
+    end
+    object btnp3chiama: TButton
+      Position.X = 201.000000000000000000
+      Position.Y = 116.000000000000000000
+      Size.Width = 75.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 18
+      TextSettings.Trimming = None
+      OnClick = btnp3chiamaClick
+    end
+    object btnp4chiama: TButton
+      Position.X = 201.000000000000000000
+      Position.Y = 146.000000000000000000
+      Size.Width = 75.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 19
+      TextSettings.Trimming = None
+      OnClick = btnp4chiamaClick
+    end
+    object btnp5chiama: TButton
+      Position.X = 201.000000000000000000
+      Position.Y = 176.000000000000000000
+      Size.Width = 75.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 20
+      TextSettings.Trimming = None
+      OnClick = btnp5chiamaClick
+    end
+    object btnp6chiama: TButton
+      Position.X = 201.000000000000000000
+      Position.Y = 206.000000000000000000
+      Size.Width = 75.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 21
+      TextSettings.Trimming = None
+      OnClick = btnp6chiamaClick
+    end
+    object btnp1chiamato: TButton
+      Position.X = 303.000000000000000000
+      Position.Y = 58.000000000000000000
+      Size.Width = 74.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 22
+      TextSettings.Trimming = None
+      OnClick = btnp1chiamatoClick
+    end
+    object btnp2chiamato: TButton
+      Position.X = 303.000000000000000000
+      Position.Y = 88.000000000000000000
+      Size.Width = 74.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 23
+      TextSettings.Trimming = None
+      OnClick = btnp2chiamatoClick
+    end
+    object btnp3chiamato: TButton
+      Position.X = 302.000000000000000000
+      Position.Y = 118.000000000000000000
+      Size.Width = 75.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 24
+      TextSettings.Trimming = None
+      OnClick = btnp3chiamatoClick
+    end
+    object btnp4chiamato: TButton
+      Position.X = 302.000000000000000000
+      Position.Y = 148.000000000000000000
+      Size.Width = 75.000000000000000000
+      Size.Height = 20.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 25
+      TextSettings.Trimming = None
+      OnClick = btnp4chiamatoClick
+    end
+    object btnp5chiamato: TButton
+      Position.X = 302.000000000000000000
+      Position.Y = 176.000000000000000000
+      Size.Width = 75.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 26
+      TextSettings.Trimming = None
+      OnClick = btnp5chiamatoClick
+    end
+    object btnp6chiamato: TButton
+      Position.X = 302.000000000000000000
+      Position.Y = 206.000000000000000000
+      Size.Width = 75.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 27
+      TextSettings.Trimming = None
+      OnClick = btnp6chiamatoClick
+    end
+    object btnvince: TButton
+      Position.X = 32.000000000000000000
+      Position.Y = 236.000000000000000000
+      Size.Width = 137.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 28
+      Text = 'vincono'
+      TextSettings.Trimming = None
+      OnClick = btnvinceClick
+    end
+    object btnperde: TButton
+      Position.X = 224.000000000000000000
+      Position.Y = 236.000000000000000000
+      Size.Width = 153.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 29
+      Text = 'perdono'
+      TextSettings.Trimming = None
+      OnClick = btnperdeClick
+    end
+  end
+end

@@ -1,0 +1,14 @@
+program Punti;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  uMainUnit in 'uMainUnit.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TMainform, mainform);
+  Application.Run;
+end.
